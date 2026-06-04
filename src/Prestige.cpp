@@ -51,7 +51,7 @@ void CheckForUpdatedMaxStats(Player* player)
     }
 }
 
-void PrestigePlayerScript::OnLogout(Player* player)
+void PrestigePlayerScript::OnPlayerLogout(Player* player)
 {
     if (!player)
     {
@@ -690,7 +690,7 @@ void InitPrestigeExpTnl(Player* player)
 }
 
 /*currently has no additional functionality. Included for future updates*/
-bool PrestigeCreatureScript::OnGossipHello(Player* player, Creature* creature)
+bool PrestigeCreatureScript::OnPlayerGossipHello(Player* player, Creature* creature)
 {
     PrestigeMainMenu(player);
     return true;
@@ -1044,7 +1044,7 @@ void PrestigeResistanceStatsMenu(Player* player)
         return;
 }
 
-void PrestigePlayerScript::OnGossipSelect(Player* player, uint32 menu_id, uint32 sender, uint32 action)
+void PrestigePlayerScript::OnPlayerGossipSelect(Player* player, uint32 menu_id, uint32 sender, uint32 action)
 {
     if (action == PRESTIGE_GOSSIP_ALLOCATE_MAIN_MENU)
     {
