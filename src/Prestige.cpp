@@ -637,7 +637,7 @@ void PrestigeWorldScript::OnAfterConfigLoad(bool reload)
     LoadPrestigeStats();
 }
 
-void PrestigePlayerScript::OnLevelChanged(Player* player, uint8 oldLevel)
+void PrestigePlayerScript::OnPlayerLevelChanged(Player* player, uint8 oldLevel)
 {
     if (oldLevel == prestigeConfigSettings.GetIntendedMaxLevel() && player->GetLevel() == sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL))
     {
