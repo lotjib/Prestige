@@ -7,7 +7,7 @@
 
 auto& prestigeConfigSettings = PrestigeConfigSettings::Instance();
 
-void PrestigePlayerScript::OnLogin(Player* player)
+void PrestigePlayerScript::OnPlayerLogin(Player* player)
 {
     if (!player)
     {
