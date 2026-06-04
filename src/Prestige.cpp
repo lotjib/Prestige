@@ -690,7 +690,7 @@ void InitPrestigeExpTnl(Player* player)
 }
 
 /*currently has no additional functionality. Included for future updates*/
-bool PrestigeCreatureScript::OnPlayerGossipHello(Player* player, Creature* creature)
+bool PrestigeCreatureScript::OnGossipHello(Player* player, Creature* creature)
 {
     PrestigeMainMenu(player);
     return true;
